@@ -24,7 +24,8 @@ export default function Header() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="bg-primary/5 p-2 rounded-full">
+                    {/* Using bg-blue-900 instead of bg-primary */}
+                    <div className="bg-blue-900/5 p-2 rounded-full">
                         {/* Simple Mickey Silhouette Icon - Abstract */}
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="5" cy="7" r="3" fill="#1E3A8A" />
@@ -33,7 +34,8 @@ export default function Header() {
                         </svg>
                     </div>
                     <div className="flex flex-col leading-none">
-                        <span className="text-lg font-bold text-primary tracking-tight">HERE WE GO</span>
+                        {/* Using text-blue-900 instead of text-primary */}
+                        <span className="text-lg font-bold text-blue-900 tracking-tight">HERE WE GO</span>
                         <span className="text-xs font-medium text-gray-500 tracking-widest uppercase">Advisor</span>
                     </div>
                 </Link>
@@ -44,7 +46,7 @@ export default function Header() {
                         <Link
                             key={item}
                             href={`#${item.toLowerCase().replace(" ", "-")}`}
-                            className="text-sm font-medium text-gray-700 hover:text-primary transition-colors hover:underline underline-offset-4"
+                            className="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors hover:underline underline-offset-4"
                         >
                             {item}
                         </Link>

@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative w-full min-h-[90vh] flex items-center bg-background overflow-hidden">
+        <section className="relative w-full min-h-[90vh] flex items-center bg-gray-50 overflow-hidden">
 
             {/* Background with slight fade */}
             <div className="absolute inset-0 z-0">
@@ -35,13 +35,14 @@ export default function Hero() {
                             Authorized Vacation Planners
                         </div>
 
-                        <h1 className="text-5xl md:text-7xl font-montserrat font-extrabold text-foreground leading-[1.1] mb-6 drop-shadow-sm">
+                        <h1 className="text-5xl md:text-7xl font-montserrat font-extrabold text-gray-900 leading-[1.1] mb-6 drop-shadow-sm">
                             Make Magic <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Happen.</span>
+                            {/* Changed to standard colors: blue-900 to pink-600 */}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-pink-600">Happen.</span>
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-600 font-light mb-8 max-w-lg leading-relaxed">
-                            Planning a Disney trip can be overwhelming. We handle every detail—dinning, genie+, and hotels—so you can just pack your ears.
+                            Planning a Disney trip can be overwhelming. We handle every detail—dining, genie+, and hotels—so you can just pack your ears.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -54,7 +55,7 @@ export default function Hero() {
                             </Link>
                             <Link
                                 href="#destinations"
-                                className="bg-white hover:bg-gray-50 text-foreground font-semibold px-10 py-4 rounded-full shadow-md border border-gray-200 transition-all text-center"
+                                className="bg-white hover:bg-gray-50 text-gray-900 font-semibold px-10 py-4 rounded-full shadow-md border border-gray-200 transition-all text-center"
                             >
                                 Explore Packages
                             </Link>

@@ -38,7 +38,8 @@ h6 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
+  /* Replaced @apply bg-accent with standard utility or hex to avoid config issues */
   .btn-primary {
-    @apply bg-accent hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1;
+    @apply bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1;
   }
 }
